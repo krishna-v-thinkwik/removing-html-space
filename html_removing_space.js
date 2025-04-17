@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
 
-app.use(bodyParser.text({ type: '*/*' }));
+const port = process.env.PORT || 3000;
+
+app.use(bodyParser.text({ type: '*/*', limit: '2mb' }));
 
 function flattenHTML(html) {
   return html
