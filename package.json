@@ -1,0 +1,12 @@
+{
+  "name": "html-flattener-api",
+  "version": "1.0.0",
+  "main": "html_removing_space.js",
+  "scripts": {
+    "start": "node html_removing_space.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  }
+}
